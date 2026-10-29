@@ -1,0 +1,169 @@
+# ************************************************************************************************
+# Warning: YAML source code for Canvas Apps should only be used to review changes made within Power Apps Studio and for minor edits (Preview).
+# Use the maker portal to create and edit your Power Apps.
+# 
+# The schema file for Canvas Apps is available at https://go.microsoft.com/fwlink/?linkid=2304907
+# 
+# For more information, visit https://go.microsoft.com/fwlink/?linkid=2292623
+# ************************************************************************************************
+Screens:
+  scrHome:
+    Properties:
+      Fill: =RGBA(255, 255, 255, 1)
+      LoadingSpinnerColor: =RGBA(0, 120, 212, 1)
+    Children:
+      - ScreenContainer1:
+          Control: GroupContainer@1.5.0
+          Variant: AutoLayout
+          Properties:
+            Fill: =RGBA(245, 245, 245, 1)
+            Height: =Parent.Height
+            LayoutAlignItems: =LayoutAlignItems.Stretch
+            LayoutDirection: =LayoutDirection.Vertical
+            LayoutGap: =16
+            PaddingBottom: =16
+            PaddingLeft: =16
+            PaddingRight: =16
+            PaddingTop: =16
+            Width: =Parent.Width
+          Children:
+            - HeaderContainer1:
+                Control: GroupContainer@1.5.0
+                Variant: AutoLayout
+                Properties:
+                  Fill: =RGBA(255, 255, 255, 1)
+                  FillPortions: =0
+                  Height: =75
+                  LayoutAlignItems: =LayoutAlignItems.Center
+                  LayoutDirection: =LayoutDirection.Horizontal
+                  LayoutMinHeight: =16
+                  LayoutMinWidth: =16
+                  PaddingBottom: =8
+                  PaddingLeft: =8
+                  PaddingRight: =8
+                  PaddingTop: =8
+                  RadiusBottomLeft: =8
+                  RadiusBottomRight: =8
+                  RadiusTopLeft: =8
+                  RadiusTopRight: =8
+            - MainContainer1:
+                Control: GroupContainer@1.5.0
+                Variant: AutoLayout
+                Properties:
+                  Fill: =RGBA(255, 255, 255, 1)
+                  LayoutAlignItems: =LayoutAlignItems.Center
+                  LayoutDirection: =LayoutDirection.Horizontal
+                  LayoutGap: =5
+                  LayoutMinHeight: =16
+                  LayoutMinWidth: =16
+                  PaddingBottom: =8
+                  PaddingLeft: =8
+                  PaddingRight: =8
+                  PaddingTop: =8
+                  RadiusBottomLeft: =8
+                  RadiusBottomRight: =8
+                  RadiusTopLeft: =8
+                  RadiusTopRight: =8
+                Children:
+                  - Button2:
+                      Control: Classic/Button@2.2.0
+                      Properties:
+                        BorderColor: =RGBA(0, 0, 0, 1)
+                        BorderThickness: =1
+                        Color: =RGBA(255, 255, 255, 1)
+                        DisabledBorderColor: =RGBA(0, 0, 0, 0)
+                        DisabledColor: =RGBA(179, 179, 179, 1)
+                        DisabledFill: =RGBA(242, 242, 241, 0)
+                        Fill: =RGBA(179, 179, 179, 1)
+                        FillPortions: =1
+                        Font: =Font.'Lato Hairline'
+                        FontWeight: =FontWeight.Bold
+                        Height: =500
+                        HoverBorderColor: =RGBA(0, 0, 0, 0)
+                        HoverColor: =RGBA(255, 255, 255, 1)
+                        HoverFill: =RGBA(230, 230, 230, 1)
+                        LayoutMinHeight: =16
+                        LayoutMinWidth: =16
+                        OnSelect: =Navigate(scrNewReq,ScreenTransition.Fade)
+                        PressedBorderColor: =RGBA(153, 153, 153, 1)
+                        PressedColor: =RGBA(255, 255, 255, 1)
+                        PressedFill: =RGBA(230, 230, 230, 1)
+                        RadiusBottomLeft: =30
+                        RadiusBottomRight: =30
+                        RadiusTopLeft: =30
+                        RadiusTopRight: =30
+                        Text: ="New Request"
+                  - Button3:
+                      Control: Classic/Button@2.2.0
+                      Properties:
+                        BorderColor: =RGBA(0, 0, 0, 1)
+                        BorderThickness: =1
+                        Color: =RGBA(255, 255, 255, 1)
+                        DisabledBorderColor: =RGBA(0, 0, 0, 0)
+                        DisabledColor: =RGBA(161, 159, 157, 1)
+                        DisabledFill: =RGBA(242, 242, 241, 0)
+                        Fill: =RGBA(179, 179, 179, 1)
+                        FillPortions: =1
+                        Font: =Font.'Lato Hairline'
+                        FontWeight: =FontWeight.Bold
+                        Height: =500
+                        HoverBorderColor: =RGBA(255, 255, 255, 1)
+                        HoverColor: =RGBA(255, 255, 255, 1)
+                        HoverFill: =RGBA(230, 230, 230, 1)
+                        LayoutMinHeight: =16
+                        LayoutMinWidth: =16
+                        OnSelect: =Navigate(scrMyReq,ScreenTransition.Fade)
+                        PressedBorderColor: =RGBA(153, 153, 153, 1)
+                        PressedColor: =RGBA(255, 255, 255, 1)
+                        PressedFill: =RGBA(230, 230, 230, 1)
+                        RadiusBottomLeft: =30
+                        RadiusBottomRight: =30
+                        RadiusTopLeft: =30
+                        RadiusTopRight: =30
+                        Text: ="My Requests"
+      - Rectangle1:
+          Control: Rectangle@2.3.0
+          Properties:
+            BorderColor: =RGBA(0, 0, 0, 0)
+            BorderStyle: =BorderStyle.None
+            BorderThickness: =2
+            DisabledFill: =RGBA(161, 159, 157, 1)
+            Fill: =RGBA(36, 59, 100, 0.86)
+            FocusedBorderThickness: =4
+            Height: =122
+            HoverFill: =RGBA(0, 120, 212, 1)
+            PressedFill: =RGBA(0, 120, 212, 1)
+            Width: =Parent.Width
+      - Label1:
+          Control: Label@2.5.1
+          Properties:
+            BorderColor: =RGBA(0, 0, 0, 0)
+            BorderStyle: =BorderStyle.None
+            BorderThickness: =2
+            Color: =RGBA(255, 255, 255, 0.93)
+            DisabledBorderColor: =RGBA(0, 0, 0, 0)
+            DisabledColor: =RGBA(161, 159, 157, 1)
+            FocusedBorderThickness: =4
+            Font: =Font.'Lato Black'
+            Height: =50
+            Size: =24
+            Text: ="Employee Request Manager"
+            Width: =500
+            X: =30
+            Y: =25
+      - Label3:
+          Control: Label@2.5.1
+          Properties:
+            BorderColor: =RGBA(0, 0, 0, 0)
+            BorderStyle: =BorderStyle.None
+            BorderThickness: =2
+            Color: =RGBA(255, 255, 255, 0.9)
+            DisabledBorderColor: =RGBA(0, 0, 0, 0)
+            DisabledColor: =RGBA(161, 159, 157, 1)
+            FocusedBorderThickness: =4
+            Font: =Font.Lato
+            Size: =11
+            Text: ="  Business Requests · Dashboard"
+            Width: =300
+            X: =30
+            Y: =64
